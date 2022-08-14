@@ -1,0 +1,36 @@
+.Contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 0;
+}
+.c-1{
+    font-size: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+}
+.c-1-1{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.c-3{
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    padding: 2rem;
+    background-color: #edf6ff;
+    line-height: 1.5rem;
+}
+.c-4-1{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(98, 96, 96);
+    padding:  0.5rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 2vmax;
+}
+@media screen and (max-width: 800px){
+    .c-1{
+        font-size: 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    }
+}

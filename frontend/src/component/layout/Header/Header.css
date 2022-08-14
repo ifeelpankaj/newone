@@ -1,0 +1,83 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.main-container {
+  width: 100vw;
+  height: 7.5vh;
+  position: fixed;
+  bottom: 2vmax;
+}
+
+.flex-container {
+  padding: 0.7vmax  0vmax;
+  opacity: inherit;
+  background-color: #949393;
+  margin: 0px 26vw;
+  display: flex;
+  flex-direction: row;
+  border-radius: 34px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(126, 126, 126, 0.205);
+  border-left: 1px solid rgba(126, 126, 126, 0.205);
+  overflow: hidden;
+}
+
+.Navbar>a:hover {
+  color: aqua;
+}
+
+.Navbar>a.active {
+  color: aqua;
+}
+
+.Navbar>a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: aliceblue;
+
+}
+
+.Navbar-title {
+  padding: 0 2rem;
+  color: aliceblue;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .logoReactNavbar {
+    width: 150% !important;
+  }
+
+  .flex-container {
+    margin: 0px 0vw;
+  }
+
+  .main-container {
+  
+    height: 7vh;
+
+  }
+  .Navbar>a.active {
+    color: red;
+  }
+}

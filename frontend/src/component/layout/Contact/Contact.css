@@ -1,0 +1,80 @@
+.calling {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div {
+    margin: 1vmax;
+    padding: 3vmax;
+}
+
+.div>svg {
+    font-size: 5vmax;
+    color: white;
+    border: 10px solid rgb(237, 230, 219);
+    border-radius: 100%;
+    padding: 2vmax;
+    background-color: black;
+
+}
+
+.div>p {
+    font-size: 2vmax;
+    margin: 2vmax;
+    color: black;
+   
+}
+
+.div>a {
+    font-size: 2vmax;
+    margin: 2vmax;
+    color: black;
+    cursor: pointer;
+    /* font: 400 1vmax "Roboto"; */
+    text-decoration: none;
+   
+}
+
+.diiv>a {
+    background-color: rgb(51, 51, 51);
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+    margin: 2vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .calling {
+        position: relative;
+        height: 70vh;
+        flex-wrap: wrap;
+    }
+
+    .div {
+        margin: 1vmax;
+        padding: 1vmax;
+    }
+
+    .div>a {
+        padding: 3vw 6vw;
+        font: 400 4vw "Roboto";
+        margin: 2vmax;
+    }
+
+    .div>svg {
+        font-size: 20vw;
+    }
+
+    .div>p {
+        margin: 2vmax;
+        font-size: 5vw;
+    }
+}

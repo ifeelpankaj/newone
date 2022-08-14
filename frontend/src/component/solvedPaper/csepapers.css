@@ -1,0 +1,202 @@
+/* son */
+
+.contentCard {
+  width: 15vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(8, 159, 139);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding: 1vmax;
+  background-image: url("../../images/dairy1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  word-wrap: break-word;
+  justify-content: center;
+}
+
+.contentCard>h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+.contentCard>p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+.contentCard>div {
+  margin: 1vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+.contentInfoNew {
+  margin: 1vmax;
+  font-size: 2vmax;
+  color: red;
+  text-align: justify;
+  text-decoration: none;
+}
+
+
+.contentsHeading {
+  margin: 2vmax auto;
+  width: 30vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 2.5vmax "Roboto";
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+
+
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  border-radius: 30px;
+  margin: 20px;
+  background: white;
+}
+
+.a {
+  text-decoration: none;
+  /* border: 3px solid rgb(192, 158, 152); */
+  color: transparent;
+  padding: 34px 110px;
+  font-size: 28px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.a:before {
+  content: "🔍 Search";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(147, 162, 171);
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+
+.a:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+
+.a:after {
+  content: "🔍 Search";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(147, 162, 171);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+
+.a:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  .contentCard {
+    border: 0.5px solid rgb(220, 186, 186);
+    border-radius: 34px;
+    width: 30vmax;
+  }
+
+  .contentCard>p {
+    font-size: 1.7vmax;
+  }
+
+  .contentInfo {
+    font-size: 12px;
+  }
+
+  .contentCard>div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .contentCard>span {
+    font-size: 1.5vmax;
+  }
+
+  .contentCard>div>span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+
+  .bodyForSerch {
+    margin: 10px;
+  }
+
+  .btn-search {
+    width: 100px;
+  }
+
+  .input-search::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+
+  .a {
+    font-size: 0px;
+  }
+
+}

@@ -1,0 +1,33 @@
+.jobCard {
+  width: 60vw;
+  margin: 0.5rem;
+  color: #cf2e2e;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+
+
+}
+.jobCard-1 {
+  text-decoration: none;
+}
+.company{
+  text-align: center;
+  font-size: 3vh;
+  color: #0693e3;
+}
+
+.jobCard:hover {
+  color: #0693e3;
+
+}
+
+@media screen and (max-width: 600px) {
+  .jobCard {
+    font-size: 0.4rem;
+  }
+  .company{
+    text-align: center;
+    font-size: 1vh;
+    color: #0693e3;
+  }
+}
